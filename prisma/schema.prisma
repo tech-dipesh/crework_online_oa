@@ -5,3 +5,44 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model Company {
+  id String @id @default(cuid())
+  name String @unique
+  website String?
+  industry String?
+  stage String?
+  headcount Int?
+  
+  signals String[]
+  signalSource String?
+  
+  description String?
+  keyInsights String?
+  
+  intentScore Int
+  scoringReasoning String?
+  confidence Float?
+  
+  detectedAt DateTime @default(now())
+  lastEnrichedAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@index([intentScore])
+  @@index([detectedAt])
+  @@index([signalSource])
+}
+
+model Signal {
+  id String @id @default(cuid())
+  companyId String
+  signalType String
+  value String
+  source String
+  confidence Float?
+  detectedAt DateTime @default(now())
+  
+  @@index([companyId])
+  @@index([signalType])
+}
