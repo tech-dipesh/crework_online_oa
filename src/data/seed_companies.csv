@@ -1,0 +1,37 @@
+name,website,industry,stage,description,signals
+Acme AI Solutions,acme-ai.com,SaaS,Series A,"Building enterprise AI tools for document processing and automation",recently_funded|hiring_sales|growth
+TechFlow DevTools,techflow.dev,Developer Tools,Series B,"Real-time API management platform for modern development teams",hiring_sales|growth
+DataFlow Systems,dataflow.systems,Data Infrastructure,Pre-seed,"Real-time data processing and ETL platform for data teams",growth
+CloudScale Inc,cloudscale.io,Cloud Infrastructure,Series A,"Multi-cloud orchestration platform for enterprise",recently_funded|hiring_sales
+NextGen Analytics,nextgen-analytics.com,Analytics,Seed,"AI-powered business intelligence for SMBs",hiring_sales
+FinTech Innovations,fintech-inn.com,FinTech,Series B,"B2B payment infrastructure for e-commerce",recently_funded|hiring_sales
+MarketFlow,marketflow.app,Marketing Tech,Series A,"Marketing automation for enterprise sales teams",hiring_sales|growth
+SecureVault,securevault.io,Security,Pre-seed,"Enterprise password management solution",growth
+AutoScale Labs,autoscale-labs.com,Infrastructure,Series A,"Kubernetes automation and cost optimization",recently_funded|hiring_sales
+APIHub Pro,apihub-pro.com,API Management,Seed,"API lifecycle management platform for enterprises",hiring_sales
+CloudNine Data,cloudnine-data.io,Data Science,Series B,"Data warehousing and analytics platform",recently_funded|growth
+ProduceAI,produce-ai.io,AI/ML,Series A,"Generative AI platform for content creation",recently_funded|hiring_sales
+WebScale,webscale.tech,Web Infrastructure,Pre-seed,"Edge computing platform for web applications",growth
+RetailSense,retailsense.ai,Retail Tech,Seed,"AI inventory management for retail chains",hiring_sales
+HealthSync,healthsync.io,HealthTech,Series A,"Healthcare data integration platform",recently_funded|hiring_sales
+LogisticsAI,logistics-ai.com,Logistics,Series A,"AI-powered supply chain optimization",recently_funded|hiring_sales
+CyberDefense,cyberdefense.tech,Cybersecurity,Series B,"Advanced threat detection platform",hiring_sales|growth
+WorkFlow Pro,workflow-pro.io,Productivity,Seed,"Team collaboration tool for remote work",growth
+QuantumAnalytics,quantum-analytics.ai,Data Analytics,Pre-seed,"Advanced data science platform",growth
+MetricsHub,metricshub.app,Business Intelligence,Series A,"Real-time metrics and KPI dashboard",recently_funded|hiring_sales
+BridgeAPI,bridgeapi.io,Finance API,Series A,"API for financial data aggregation",recently_funded|hiring_sales
+DeployFlow,deployflow.dev,DevOps,Seed,"CI/CD automation platform",hiring_sales
+VisionAI Corp,visionai-corp.com,Computer Vision,Series B,"Computer vision API for enterprise",recently_funded|hiring_sales
+SentimentFlow,sentimentflow.ai,NLP,Pre-seed,"Sentiment analysis and insights platform",growth
+SecureNet,securenet.cloud,Cloud Security,Series A,"Cloud security posture management",recently_funded|hiring_sales
+DataVault,datavault.io,Data Management,Series A,"Enterprise data governance platform",recently_funded|growth
+EventFlow,eventflow.tech,Event Platform,Seed,"Real-time event streaming infrastructure",hiring_sales
+NetFlow Analytics,netflow-analytics.io,Network,Pre-seed,"Network intelligence platform",growth
+AutoML Systems,automl-systems.com,Machine Learning,Series B,"Automated machine learning platform",recently_funded|hiring_sales
+CloudSync,cloudsync.io,Cloud Sync,Series A,"File sync and collaboration platform",recently_funded|hiring_sales
+APIVault,apivault.tech,API Security,Pre-seed,"API security and compliance platform",growth
+CodeReview,codereview.pro,Developer Tools,Seed,"Automated code review platform",hiring_sales
+InsightsDX,insightsdx.ai,Analytics,Series A,"Customer insights and analytics platform",recently_funded|hiring_sales
+MonitorPro,monitorpro.io,Monitoring,Series A,"Infrastructure monitoring platform",recently_funded|growth
+SafetyNet,safetynet.cloud,Risk Management,Pre-seed,"Risk assessment and management platform",growth
+IntegrationHub,integration-hub.io,Integration Platform,Series B,"iPaaS for enterprise integrations",recently_funded|hiring_sales

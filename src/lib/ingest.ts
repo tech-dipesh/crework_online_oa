@@ -9,7 +9,7 @@ export async function ingestCompanies() {
   let companies = []
 
   try {
-    console.log("📊 Fetching from PitchDB...")
+    console.log(" Fetching from PitchDB...")
     const pitchdbCompanies = await fetchPitchDBCompanies()
     companies = companies.concat(pitchdbCompanies)
     console.log(`✓ Got ${pitchdbCompanies.length} from PitchDB`)
@@ -20,7 +20,7 @@ export async function ingestCompanies() {
     console.log(`✓ Loaded ${seedCompanies.length} from seed data`)
   }
 
-  console.log(`📝 Scoring ${companies.length} companies with Grok...`)
+  console.log(` Scoring ${companies.length} companies with Grok...`)
 
   let successCount = 0
   let failureCount = 0
@@ -64,7 +64,7 @@ export async function ingestCompanies() {
 
   const total = await prisma.company.count()
   console.log(
-    `\n✅ Ingestion complete. Success: ${successCount}, Failed: ${failureCount}, Total in DB: ${total}`
+    `\n Ingestion complete. Success: ${successCount}, Failed: ${failureCount}, Total in DB: ${total}`
   )
 
   return { success: true, totalCompanies: total, successCount, failureCount }
