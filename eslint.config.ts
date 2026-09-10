@@ -1,6 +1,6 @@
-import type { Config } from "eslint"
+import type { NextConfig } from "next"
 
-const config: Config = {
+const config: NextConfig = {
   extends: ["next/core-web-vitals"],
   rules: {
     "react-hooks/rules-of-hooks": "error",
