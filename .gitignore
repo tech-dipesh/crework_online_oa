@@ -37,3 +37,5 @@ prisma/client/
 # Testing
 coverage/
 .nyc_output/
+
+next-env.d.ts
