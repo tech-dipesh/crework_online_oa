@@ -3,7 +3,6 @@ import { ingestCompanies } from "@/lib/ingest"
 
 export async function POST(request: NextRequest) {
   try {
-    console.log("📡 Ingestion API called")
     const results = await ingestCompanies()
     return NextResponse.json({
       success: true,

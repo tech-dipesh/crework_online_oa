@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { prisma } from "@/lib/prisma"
-import { ScoreBadge } from "@/src/components/ScoreBadge"
+import { ScoreBadge } from "@/components/ScoreBadge"
 
 interface PageParams {
   params: {

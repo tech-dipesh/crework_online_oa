@@ -17,5 +17,5 @@ body {
 }
 
 @utility gradient-text {
-  @apply bg-gradient-to-r from-emerald-300 to-teal-300 bg-clip-text text-transparent;
+  @apply bg-linear-to-r from-emerald-300 to-teal-300 bg-clip-text text-transparent;
 }
