@@ -39,3 +39,6 @@ coverage/
 .nyc_output/
 
 next-env.d.ts
+notes.md
+prisma/migrations/
+*.zip
