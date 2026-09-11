@@ -21,12 +21,8 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@/prisma": [
-        "./prisma/client"
-      ]
+      "@/*": [ "./src/*" ],
+      "@/prisma": [ "./prisma/generated/client" ]
     },
     "allowJs": true,
     "incremental": true,

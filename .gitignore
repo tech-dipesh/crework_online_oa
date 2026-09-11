@@ -42,3 +42,7 @@ next-env.d.ts
 notes.md
 prisma/migrations/
 *.zip
+generated/
+COMPLETE_FIX_SUMMARY.md
+*.md
+!README.md
