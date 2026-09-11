@@ -1,5 +1,4 @@
 const GROK_API_KEY = process.env.GROK_API_KEY
-
 interface CompanyData {
   name: string
   website?: string

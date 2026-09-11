@@ -1,23 +1,20 @@
 import { prisma } from "./prisma"
 import { scoreCompanyWithGrok } from "./grok"
-import { fetchPitchDBCompanies } from "./data-sources/pitchdb"
 import { loadSeedCompanies } from "./data-sources/seed"
+import { fetchYCombinatorCompanies } from "./data-sources/ycombinator"
 
 export async function ingestCompanies() {
-  console.log("Starting ingestion pipeline...")
 
   let companies = []
 
   try {
-    console.log(" Fetching from PitchDB...")
-    const pitchdbCompanies = await fetchPitchDBCompanies()
+    const pitchdbCompanies = await fetchYCombinatorCompanies()
     companies = companies.concat(pitchdbCompanies)
     console.log(`✓ Got ${pitchdbCompanies.length} from PitchDB`)
   } catch (error) {
     console.warn(" PitchDB failed, falling back to seed data:", error)
     const seedCompanies = await loadSeedCompanies()
     companies = companies.concat(seedCompanies)
-    console.log(`✓ Loaded ${seedCompanies.length} from seed data`)
   }
 
   console.log(` Scoring ${companies.length} companies with Grok...`)
