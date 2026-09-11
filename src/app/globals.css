@@ -1,21 +1,67 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  --color-surface-base: #000000;
+  --color-surface-muted: #080808;
+  --color-surface-raised: #101010;
+  --color-border-default: #262626;
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #bdbdbd;
+  --color-text-tertiary: #ff4c00;
+  --color-text-inverse: #d1d1d1;
+
+  --text-xs: 12px;
+  --text-sm: 16px;
+  --text-md: 20px;
+  --text-lg: 24px;
+  --text-xl: 42px;
+  --text-2xl: 48px;
+  --text-3xl: 60px;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 16px;
+  --spacing-4: 20px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 64px;
+  --spacing-8: 80px;
+
+  --radius-xs: 8px;
+
+  --duration-instant: 150ms;
+  --duration-fast: 500ms;
+}
+
 * {
-  @apply border-slate-700;
+  border-color: var(--color-border-default);
 }
 
 html {
-  @apply scroll-smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-slate-950 text-slate-100 antialiased flex items-center justify-center min-h-screen p-4;
+  background-color: var(--color-surface-base);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
 }
 
-@utility glass {
-  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl;
+/* Visible focus is a hard requirement (WCAG 2.2 AA) — never remove this. */
+:focus-visible {
+  outline: 2px solid var(--color-text-tertiary);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
 }
 
-@utility gradient-text {
-  @apply bg-linear-to-r from-emerald-300 to-teal-300 bg-clip-text text-transparent;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
