@@ -60,7 +60,9 @@ export function CompanyCard({ company }: { company: Company }) {
                   </span>
                 )}
                 {company.stage && (
-                  <span className={`text-xs px-2 py-1 rounded-full bg-slate-700/50 ${getStageColor(company.stage)}`}>
+                  <span
+                    className={`text-xs px-2 py-1 rounded-full bg-slate-700/50 ${getStageColor(company.stage)}`}
+                  >
                     {company.stage}
                   </span>
                 )}
@@ -93,7 +95,9 @@ export function CompanyCard({ company }: { company: Company }) {
           </div>
 
           <div className="flex items-center justify-between pt-4 border-t border-slate-700/50">
-            <span className="text-xs text-slate-500 capitalize">via {company.signalSource}</span>
+            <span className="text-xs text-slate-500 capitalize">
+              via {company.signalSource}
+            </span>
             <span className="text-xs font-medium text-emerald-400 group-hover:text-emerald-300 transition-colors">
               View Details →
             </span>
