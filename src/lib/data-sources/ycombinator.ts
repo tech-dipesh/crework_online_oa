@@ -1,14 +1,15 @@
 export async function fetchYCombinatorCompanies(): Promise<any[]> {
   try {
+    console.log(" Fetching YCombinator companies...")
 
-    const response = await fetch(
-      "https://yc-oss.github.io/api/companies/top.json"
-    )
+    const response = await fetch( "https://yc-oss.github.io/api/companies/top.json")
+    console.log('response', response);
     if (!response.ok) {
       throw new Error(`YC API failed: ${response.status}`)
     }
-    
+
     const companies = await response.json()
+
     return companies.map((company: any) => ({
       name: company.name,
       website: company.website,
