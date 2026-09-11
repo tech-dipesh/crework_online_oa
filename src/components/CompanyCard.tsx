@@ -33,8 +33,8 @@ export function CompanyCard({ company }: { company: Company }) {
 
   return (
     <Link href={`/company/${company.id}`}>
-      <div className="group relative bg-gradient-to-br from-slate-800/80 via-slate-900/60 to-slate-950/80 border border-slate-700/50 rounded-xl p-6 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 cursor-pointer backdrop-blur-md">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-teal-500/0 group-hover:from-emerald-500/5 group-hover:to-teal-500/5 rounded-xl transition-all duration-300" />
+      <div className="group relative bg-linear-to-br from-slate-800/80 via-slate-900/60 to-slate-950/80 border border-slate-700/50 rounded-xl p-6 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 cursor-pointer backdrop-blur-md">
+        <div className="absolute inset-0 bg-linear-to-br from-emerald-500/0 to-teal-500/0 group-hover:from-emerald-500/5 group-hover:to-teal-500/5 rounded-xl transition-all duration-300" />
 
         <div className="relative z-10">
           <div className="flex items-start justify-between mb-4">

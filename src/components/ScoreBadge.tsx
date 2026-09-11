@@ -57,7 +57,7 @@ export function ScoreBadge({ score, confidence = 0.8 }: ScoreBadgeProps) {
 
       <div className="flex-1">
         <div
-          className={`text-sm font-semibold bg-gradient-to-r ${getScoreColor(score)} bg-clip-text text-transparent`}
+          className={`text-sm font-semibold bg-linear-to-r ${getScoreColor(score)} bg-clip-text text-transparent`}
         >
           {getScoreLabel(score)}
         </div>

@@ -68,14 +68,14 @@ export function LeadsDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-linear-to-br from-slate-950 via-slate-900 to-slate-950">
       <div className="fixed inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSA2MCAwIEwgMCAwIDAgNjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2Utb3BhY2l0eT0iMC4wNSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 bg-clip-text text-transparent mb-2">
+              <h1 className="text-4xl sm:text-5xl font-bold bg-linear-to-r from-emerald-300 via-teal-300 to-cyan-300 bg-clip-text text-transparent mb-2">
                 Lead Intelligence
               </h1>
               <p className="text-slate-400 text-lg">
@@ -85,7 +85,7 @@ export function LeadsDashboard() {
             <button
               onClick={handleIngest}
               disabled={ingesting}
-              className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 disabled:opacity-50 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-emerald-500/50 disabled:cursor-not-allowed"
+              className="bg-linear-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 disabled:opacity-50 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-emerald-500/50 disabled:cursor-not-allowed"
             >
               {ingesting ? (
                 <span className="flex items-center gap-2">
@@ -93,31 +93,31 @@ export function LeadsDashboard() {
                   Scoring...
                 </span>
               ) : (
-                <span className="flex items-center gap-2">
-                  🔄 Refresh Data
+                <span className="cursor-pointer flex items-center gap-2">
+                   Refresh Data
                 </span>
               )}
             </button>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 border border-slate-700/50 rounded-lg p-4 backdrop-blur-md">
+            <div className="bg-linear-to-br from-slate-800/60 to-slate-900/60 border border-slate-700/50 rounded-lg p-4 backdrop-blur-md">
               <div className="text-sm text-slate-400 mb-1">Total Companies</div>
               <div className="text-3xl font-bold text-white">{stats.total}</div>
             </div>
-            <div className="bg-gradient-to-br from-emerald-900/20 to-emerald-950/20 border border-emerald-700/30 rounded-lg p-4 backdrop-blur-md">
+            <div className="bg-linear-to-br from-emerald-900/20 to-emerald-950/20 border border-emerald-700/30 rounded-lg p-4 backdrop-blur-md">
               <div className="text-sm text-emerald-300 mb-1">High Intent</div>
               <div className="text-3xl font-bold text-emerald-400">
                 {stats.highIntent}
               </div>
             </div>
-            <div className="bg-gradient-to-br from-amber-900/20 to-orange-950/20 border border-amber-700/30 rounded-lg p-4 backdrop-blur-md">
+            <div className="bg-linear-to-br from-amber-900/20 to-orange-950/20 border border-amber-700/30 rounded-lg p-4 backdrop-blur-md">
               <div className="text-sm text-amber-300 mb-1">Medium-High</div>
               <div className="text-3xl font-bold text-amber-400">
                 {stats.mediumIntent}
               </div>
             </div>
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 border border-slate-700/50 rounded-lg p-4 backdrop-blur-md">
+            <div className="bg-linear-to-br from-slate-800/60 to-slate-900/60 border border-slate-700/50 rounded-lg p-4 backdrop-blur-md">
               <div className="text-sm text-slate-400 mb-1">Medium & Low</div>
               <div className="text-3xl font-bold text-slate-300">
                 {stats.lowIntent}
@@ -126,7 +126,7 @@ export function LeadsDashboard() {
           </div>
         </div>
 
-        <div className="mb-8 bg-gradient-to-r from-slate-800/40 via-slate-900/40 to-slate-800/40 border border-slate-700/50 rounded-xl p-6 backdrop-blur-md">
+        <div className="mb-8 bg-linear-to-r from-slate-800/40 via-slate-900/40 to-slate-800/40 border border-slate-700/50 rounded-xl p-6 backdrop-blur-md">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
               <label className="block text-sm font-medium text-slate-300 mb-3">
