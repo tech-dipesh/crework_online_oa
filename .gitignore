@@ -46,3 +46,4 @@ generated/
 COMPLETE_FIX_SUMMARY.md
 *.md
 !README.md
+.vercel/
