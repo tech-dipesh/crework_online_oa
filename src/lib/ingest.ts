@@ -6,7 +6,7 @@ import { loadSeedCompanies } from "./data-sources/seed"
 export async function ingestCompanies() {
   console.log("Starting ingestion pipeline...")
 
-  let companies = []
+  let companies : any[]= []
 
   try {
     console.log(" Fetching from YCombinator...")

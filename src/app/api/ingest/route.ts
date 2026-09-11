@@ -1,13 +1,13 @@
 import { NextRequest, NextResponse } from "next/server"
 import { ingestCompanies } from "@/lib/ingest"
 
-export async function POST(request: NextRequest) {
+export async function POST(_request: NextRequest) {
   try {
     console.log("📡 Ingestion API called")
     const results = await ingestCompanies()
     return NextResponse.json({
-      success: true,
-      ...results
+      ...results,
+      success: true
     })
   } catch (error) {
     console.error("Ingestion API error:", error)

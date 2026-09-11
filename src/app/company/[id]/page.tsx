@@ -4,14 +4,15 @@ import { prisma } from "@/lib/prisma"
 import { ScoreBadge } from "@/components/ScoreBadge"
 
 interface PageParams {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 export default async function CompanyDetailPage({ params }: PageParams) {
+  const {id}=await params
   const company = await prisma.company.findUnique({
-    where: { id: params.id }
+    where: {id}
   })
 
   if (!company) {

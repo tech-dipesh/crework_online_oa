@@ -8,7 +8,7 @@ interface Company {
   stage?: string
   intentScore: number
   signals: string[]
-  signalSource: string
+  signalSource?: string
   confidence?: number
 }
 
